@@ -8,5 +8,6 @@ public class Main {
         DeckOfCards card=new DeckOfCards();
         card.cards();
        card.display();
+       Players.numOfPlayers();
     }
 }
