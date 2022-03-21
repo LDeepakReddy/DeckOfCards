@@ -5,9 +5,11 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Welcome to the Deck Of Cards program");
-        DeckOfCards card=new DeckOfCards();
+        DeckOfCards card = new DeckOfCards();
         card.cards();
-       card.display();
-       Players.numOfPlayers();
+        card.display();
+        int number = Players.numOfPlayers();
+        Players.sequenceOfPlay(number);
+
     }
 }
