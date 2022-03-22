@@ -1,8 +1,8 @@
-package com.blz_deckofcards;
+package com.blz.deckofcards;
 
 import java.util.Scanner;
 
-public class Players {
+public class Players extends DeckOfCards {
     public static int numOfPlayers() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter number of players ");
@@ -14,13 +14,14 @@ public class Players {
             System.out.println("Enter the players in range");
         }
 
-return player;
+        return player;
     }
+
     public static void sequenceOfPlay(int player) {
         for (int i = 1; i <= player; i++) {
             System.out.println("Player " + i + " Getting card:");
+            shuffle(playCards);
         }
     }
-
 
 }
